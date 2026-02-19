@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio de BANGUINA Di-Rema Rayan Beni – Ingénieur des Travaux Informatiques, spécialiste Génie Logiciel, Développeur Full Stack basé en région parisienne." />
+    <meta name="keywords"
+        content="ingénieur logiciel, développeur full stack, PHP, Laravel, Django, Python, génie logiciel, Paris" />
+    <meta name="author" content="BANGUINA Di-Rema Rayan Beni" />
+    <title>Rayan Beni BANGUINA – Ingénieur Logiciel & Développeur Full Stack</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Particles background -->
+    <div id="particles-bg"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">RB<span class="accent">.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">Profil</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#experience" class="nav-link">Expériences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#vision" class="nav-link">Vision</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="cv.pdf" download class="btn-nav" id="cvDownloadBtn">
+                    <i class="fas fa-download"></i> CV
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème" title="Mode clair / sombre">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-thumb">
+                            <i class="fas fa-moon theme-icon-dark"></i>
+                            <i class="fas fa-sun theme-icon-light"></i>
+                        </span>
+                    </span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <div class="hero-photo-wrapper" data-aos="fade-up" data-aos-delay="100">
+                <div class="hero-photo-ring"></div>
+                <img src="profile.jpg" alt="BANGUINA Di-Rema Rayan Beni – Ingénieur Logiciel" class="hero-photo"
+                    id="heroPhoto" onerror="this.onerror=null;this.src='ma tete/Design sans titre(1).png'" />
+                <div class="hero-badge">
+                    <i class="fas fa-circle-check"></i> Disponible
+                </div>
+            </div>
+            <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                <div class="hero-tag">👋 Bonjour, je suis</div>
+                <h1 class="hero-name">BANGUINA <span class="accent">Di-Rema</span><br />Rayan Beni</h1>
+                <div class="hero-typed-wrapper">
+                    <span class="typed-static">Je suis </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-pitch">
+                    Je conçois et développe des solutions logicielles <strong>robustes, sécurisées et
+                        évolutives</strong>,
+                    en mettant l'accent sur la performance, l'architecture et la qualité du code.
+                </p>
+                <div class="hero-location">
+                    <i class="fas fa-location-dot"></i>
+                    Champigny-sur-Marne, Île-de-France &nbsp;|&nbsp;
+                    <i class="fas fa-graduation-cap"></i>
+                    ITIC Paris – Bachelor Full Stack
+                </div>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-code"></i> Mes Projets
+                    </a>
+                    <a href="cv.pdf" download class="btn-secondary">
+                        <i class="fas fa-file-arrow-down"></i> Télécharger CV
+                    </a>
+                    <a href="#contact" class="btn-ghost">
+                        <i class="fas fa-paper-plane"></i> Me Contacter
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="mailto:rayanebanguina09@gmail.com" class="social-icon" title="Email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+33753254496" class="social-icon" title="Appeler" aria-label="Téléphone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/beni-banguina-68893425a" target="_blank" class="social-icon"
+                        title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-icon" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Projets Réalisés</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Expériences</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon"><i class="fas fa-code"></i></div>
+                    <div class="stat-number" data-target="7">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">À propos</span>
+                <h2 class="section-title">Profil <span class="accent">Professionnel</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-col" data-aos="fade-right" data-aos-delay="100">
+                    <div class="about-image-card">
+                        <img src="profile.jpg" alt="Rayan Beni BANGUINA" class="about-photo"
+                            onerror="this.onerror=null;this.src='ma tete/Design sans titre(1).png'" />
+                        <div class="about-image-overlay">
+                            <div class="about-tech-float">
+                                <span class="tech-float-tag">PHP</span>
+                                <span class="tech-float-tag">Laravel</span>
+                                <span class="tech-float-tag">Django</span>
+                                <span class="tech-float-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="info-row"><i class="fas fa-map-marker-alt"></i> Champigny-sur-Marne, France</div>
+                        <div class="info-row"><i class="fas fa-envelope"></i> rayanebanguina09@gmail.com</div>
+                        <div class="info-row"><i class="fas fa-phone"></i> +33 07 53 25 44 96</div>
+                        <div class="info-row"><i class="fas fa-university"></i> ITIC Paris</div>
+                        <div class="info-row available"><i class="fas fa-circle"></i> Disponible pour alternance</div>
+                    </div>
+                </div>
+                <div class="about-text-col" data-aos="fade-left" data-aos-delay="200">
+                    <h3>Ingénieur Logiciel passionné par l'innovation technologique</h3>
+                    <p>
+                        Détenteur d'une <strong>Licence en Génie Logiciel</strong> de l'IAI-Togo (2022–2025), je
+                        poursuis actuellement
+                        un <strong>Bachelor Concepteur Développeur Full Stack</strong> à ITIC Paris, renforçant mes
+                        compétences
+                        en conception et développement de systèmes logiciels complets.
+                    </p>
+                    <p>
+                        Fort d'une expérience terrain en développement d'applications métier — gestion de scolarité,
+                        gestion
+                        d'événements, gestion du personnel, e-commerce — je maîtrise le cycle complet de développement
+                        logiciel :
+                        de la conception architecturale au déploiement, en passant par la sécurité et la qualité du
+                        code.
+                    </p>
+                    <p>
+                        Animé par une curiosité intellectuelle profonde, je m'oriente progressivement vers des domaines
+                        en forte
+                        croissance : la <strong>cybersécurité</strong>, l'<strong>intelligence artificielle</strong> et
+                        le
+                        <strong>Big Data</strong>, où mes compétences techniques pourront s'exprimer à plus grande
+                        échelle.
+                    </p>
+                    <div class="about-formation-cards">
+                        <div class="formation-card">
+                            <div class="formation-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <div class="formation-title">Bachelor Concepteur Développeur Full Stack</div>
+                                <div class="formation-sub">ITIC Paris · Oct. 2025 – Aujourd'hui</div>
+                            </div>
+                        </div>
+                        <div class="formation-card">
+                            <div class="formation-icon"><i class="fas fa-university"></i></div>
+                            <div>
+                                <div class="formation-title">Licence en Génie Logiciel</div>
+                                <div class="formation-sub">IAI-Togo · 2022 – 2025</div>
+                            </div>
+                        </div>
+                        <div class="formation-card">
+                            <div class="formation-icon"><i class="fas fa-school"></i></div>
+                            <div>
+                                <div class="formation-title">BAC II</div>
+                                <div class="formation-sub">CS Le Rossignol · 2021 – 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section-dark" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Compétences <span class="accent">Techniques</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-tabs" data-aos="fade-up" data-aos-delay="100">
+                <button class="tab-btn active" data-tab="langages">Langages</button>
+                <button class="tab-btn" data-tab="frameworks">Frameworks</button>
+                <button class="tab-btn" data-tab="databases">Bases de données</button>
+                <button class="tab-btn" data-tab="soft">Soft Skills</button>
+            </div>
+            <div class="skills-content">
+                <div class="tab-panel active" id="tab-langages" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon php"><i class="fab fa-php"></i></div>
+                            <div class="skill-name">PHP</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="88"></div>
+                            </div>
+                            <div class="skill-level">Avancé</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon python"><i class="fab fa-python"></i></div>
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="80"></div>
+                            </div>
+                            <div class="skill-level">Avancé</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon js"><i class="fab fa-js"></i></div>
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="75"></div>
+                            </div>
+                            <div class="skill-level">Intermédiaire</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="90"></div>
+                            </div>
+                            <div class="skill-level">Expert</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="85"></div>
+                            </div>
+                            <div class="skill-level">Avancé</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-frameworks">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon laravel"><i class="fab fa-laravel"></i></div>
+                            <div class="skill-name">Laravel</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="85"></div>
+                            </div>
+                            <div class="skill-level">Avancé</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon django"><i class="fas fa-leaf"></i></div>
+                            <div class="skill-name">Django</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="78"></div>
+                            </div>
+                            <div class="skill-level">Avancé</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon flutter"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="skill-name">Flutter</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="50"></div>
+                            </div>
+                            <div class="skill-level">Bases</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon security"><i class="fas fa-shield-halved"></i></div>
+                            <div class="skill-name">Sécurité Informati.</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="72"></div>
+                            </div>
+                            <div class="skill-level">Intermédiaire</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-databases">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon sql"><i class="fas fa-database"></i></div>
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="85"></div>
+                            </div>
+                            <div class="skill-level">Avancé</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon mysql"><i class="fas fa-server"></i></div>
+                            <div class="skill-name">MySQL</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="82"></div>
+                            </div>
+                            <div class="skill-level">Avancé</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon arch"><i class="fas fa-sitemap"></i></div>
+                            <div class="skill-name">Architecture App.</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" data-width="76"></div>
+                            </div>
+                            <div class="skill-level">Intermédiaire</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-soft">
+                    <div class="soft-skills-grid">
+                        <div class="soft-card" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="soft-icon"><i class="fas fa-users"></i></div>
+                            <div class="soft-title">Esprit d'équipe</div>
+                        </div>
+                        <div class="soft-card" data-aos="zoom-in" data-aos-delay="150">
+                            <div class="soft-icon"><i class="fas fa-comments"></i></div>
+                            <div class="soft-title">Communication</div>
+                        </div>
+                        <div class="soft-card" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="soft-icon"><i class="fas fa-clock"></i></div>
+                            <div class="soft-title">Gestion du temps</div>
+                        </div>
+                        <div class="soft-card" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="soft-icon"><i class="fas fa-brain"></i></div>
+                            <div class="soft-title">Résolution de problèmes</div>
+                        </div>
+                        <div class="soft-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="soft-icon"><i class="fas fa-globe"></i></div>
+                            <div class="soft-title">Anglais Courant</div>
+                        </div>
+                        <div class="soft-card" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="soft-icon"><i class="fas fa-fire"></i></div>
+                            <div class="soft-title">Adaptabilité</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Parcours</span>
+                <h2 class="section-title">Expériences <span class="accent">Professionnelles</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Mai – Août 2025</div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company"><i class="fas fa-building"></i> DAROLLO TECHNOLOGIES
+                                CORPORATION</div>
+                            <span class="timeline-badge stage">Stage</span>
+                        </div>
+                        <h3 class="timeline-title">Développeur d'Application</h3>
+                        <p class="timeline-desc">
+                            Développement d'un <strong>logiciel de gestion de scolarité</strong> incluant la gestion des
+                            inscriptions,
+                            les paiements via Mobile Money et la génération automatique des fiches de paie.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>PHP</span><span>Laravel</span><span>MySQL</span><span>JavaScript</span><span>Mobile
+                                Money API</span>
+                        </div>
+                        <div class="timeline-achievements">
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Gestion complète des
+                                inscriptions étudiantes</div>
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Intégration paiement Mobile
+                                Money</div>
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Génération automatique de
+                                fiches de paie PDF</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juil. – Sept. 2024</div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company"><i class="fas fa-building"></i> DAROLLO TECHNOLOGIES
+                                CORPORATION</div>
+                            <span class="timeline-badge stage">Stage</span>
+                        </div>
+                        <h3 class="timeline-title">Développeur d'Application Web</h3>
+                        <p class="timeline-desc">
+                            Réalisation d'une <strong>application web de gestion d'événements</strong> avec création
+                            d'événements,
+                            gestion des inscriptions, réservation de billets et suivi des participations.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>PHP</span><span>Laravel</span><span>MySQL</span><span>Bootstrap</span>
+                        </div>
+                        <div class="timeline-achievements">
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Création et gestion
+                                d'événements</div>
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Système de réservation de
+                                billets</div>
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Tableau de bord de suivi des
+                                participations</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sept. – Oct. 2024</div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company"><i class="fas fa-school"></i> IFAD-BÂTIMENT</div>
+                            <span class="timeline-badge formation">Formation</span>
+                        </div>
+                        <h3 class="timeline-title">Formateur en Informatique</h3>
+                        <p class="timeline-desc">
+                            Formation de jeunes apprenants à l'<strong>initiation informatique</strong> et à la maîtrise
+                            des outils
+                            professionnels numériques pour une insertion en alternance.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>Pédagogie</span><span>Outils bureautiques</span><span>Formation</span>
+                        </div>
+                        <div class="timeline-achievements">
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Formation de jeunes apprenants
+                            </div>
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Initiation aux outils
+                                numériques professionnels</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Juin – Sept. 2023</div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-company"><i class="fas fa-landmark"></i> AGENCE ÉDUCATION DÉVELOPPEMENT
+                            </div>
+                            <span class="timeline-badge stage">Stage</span>
+                        </div>
+                        <h3 class="timeline-title">Développeur / Formateur</h3>
+                        <p class="timeline-desc">
+                            Participation à la conception d'un <strong>logiciel de gestion du personnel de
+                                l'AED</strong> au Palais
+                            présidentiel et formation des jeunes à l'IFAD-Bâtiment.
+                        </p>
+                        <div class="timeline-tags">
+                            <span>PHP</span><span>MySQL</span><span>Gestion RH</span><span>Formation</span>
+                        </div>
+                        <div class="timeline-achievements">
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Conception logiciel gestion du
+                                personnel</div>
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Déploiement au Palais
+                                présidentiel</div>
+                            <div class="achievement"><i class="fas fa-check-circle"></i> Formation jeunes apprenants
+                                IFAD</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section section-dark" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Réalisations</span>
+                <h2 class="section-title">Projets <span class="accent">Techniques</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-top event">
+                        <div class="project-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="project-number">01</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-category">Application Web</div>
+                        <h3 class="project-title">Gestion d'Événements</h3>
+                        <p class="project-problem"><strong>Problématique :</strong> Les organisateurs manquaient d'un
+                            outil centralisé pour gérer billets, inscriptions et suivi des participants.</p>
+                        <p class="project-solution"><strong>Solution :</strong> Application web complète permettant la
+                            création d'événements, la réservation de billets en ligne et le suivi en temps réel des
+                            participations.</p>
+                        <p class="project-value"><strong>Valeur :</strong> Réduction de 70% du temps de gestion
+                            administrative des événements.</p>
+                        <div class="project-stack">
+                            <span>PHP</span><span>Laravel</span><span>MySQL</span><span>Bootstrap</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-top school">
+                        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="project-number">02</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-category">Logiciel Métier</div>
+                        <h3 class="project-title">Gestion de Scolarité</h3>
+                        <p class="project-problem"><strong>Problématique :</strong> Administration complexe des
+                            inscriptions, paiements et paie dans un établissement scolaire.</p>
+                        <p class="project-solution"><strong>Solution :</strong> Logiciel complet intégrant gestion des
+                            inscriptions, paiement via Mobile Money et génération automatique de fiches de paie.</p>
+                        <p class="project-value"><strong>Valeur :</strong> Digitalisation complète du processus
+                            administratif scolaire.</p>
+                        <div class="project-stack">
+                            <span>PHP</span><span>Laravel</span><span>MySQL</span><span>Mobile Money
+                                API</span><span>PDF</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-top hr">
+                        <div class="project-icon"><i class="fas fa-users-gear"></i></div>
+                        <div class="project-number">03</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-category">Logiciel RH</div>
+                        <h3 class="project-title">Gestion du Personnel</h3>
+                        <p class="project-problem"><strong>Problématique :</strong> Suivi manuel et inefficace du
+                            personnel de l'AED au Palais présidentiel.</p>
+                        <p class="project-solution"><strong>Solution :</strong> Système de gestion du personnel avec
+                            suivi des effectifs, des congés et des fonctions au sein de l'administration.</p>
+                        <p class="project-value"><strong>Valeur :</strong> Modernisation et sécurisation de la gestion
+                            RH d'une institution gouvernementale.</p>
+                        <div class="project-stack">
+                            <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card-top ecom">
+                        <div class="project-icon"><i class="fas fa-store"></i></div>
+                        <div class="project-number">04</div>
+                    </div>
+                    <div class="project-card-body">
+                        <div class="project-category">E-Commerce</div>
+                        <h3 class="project-title">Boutique en Ligne</h3>
+                        <p class="project-problem"><strong>Problématique :</strong> Absence de vitrine numérique pour
+                            commercialiser des produits à l'international.</p>
+                        <p class="project-solution"><strong>Solution :</strong> Boutique e-commerce opérationnelle avec
+                            catalogue produits, panier et système de paiement intégré. <a
+                                href="https://hmfqgu-rq.myshopify.com/" target="_blank" class="project-link">Voir le
+                                site</a></p>
+                        <p class="project-value"><strong>Valeur :</strong> Formation de ~30 personnes à l'E-Commerce en
+                            Afrique et vente en ligne active.</p>
+                        <div class="project-stack">
+                            <span>Shopify</span><span>E-Commerce</span><span>Marketing digital</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Reconnaissance</span>
+                <h2 class="section-title">Certifications <span class="accent">Cisco</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="cert-timeline" data-aos="fade-up" data-aos-delay="100">
+                <div class="cert-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="cert-date-badge">Juin 2023</div>
+                    <div class="cert-connector"></div>
+                    <div class="cert-card">
+                        <div class="cert-logo"><i class="fas fa-network-wired"></i></div>
+                        <div class="cert-content">
+                            <div class="cert-issuer">Cisco Networking Academy</div>
+                            <h3 class="cert-title">Introduction to Networks</h3>
+                            <p class="cert-desc">Fondamentaux des réseaux informatiques, protocoles TCP/IP, adressage et
+                                routage de base.</p>
+                            <span class="cert-badge">IT Essentials</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="cert-date-badge">Mai 2024</div>
+                    <div class="cert-connector"></div>
+                    <div class="cert-card">
+                        <div class="cert-logo cyber"><i class="fas fa-shield-halved"></i></div>
+                        <div class="cert-content">
+                            <div class="cert-issuer">Cisco Networking Academy</div>
+                            <h3 class="cert-title">Cybersecurity Essentials</h3>
+                            <p class="cert-desc">Sécurité des systèmes, cryptographie, gestion des menaces, politiques
+                                de sécurité et bonnes pratiques.</p>
+                            <span class="cert-badge cyber">Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="cert-date-badge">Juillet 2024</div>
+                    <div class="cert-connector"></div>
+                    <div class="cert-card">
+                        <div class="cert-logo routing"><i class="fas fa-route"></i></div>
+                        <div class="cert-content">
+                            <div class="cert-issuer">Cisco Networking Academy</div>
+                            <h3 class="cert-title">Switching, Routing & Wireless Essentials</h3>
+                            <p class="cert-desc">Configuration avancée des commutateurs, routeurs et réseaux sans fil en
+                                environnement professionnel.</p>
+                            <span class="cert-badge routing">Networking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VISION ===== -->
+    <section class="section section-dark vision-section" id="vision">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Ambition</span>
+                <h2 class="section-title">Vision <span class="accent">Professionnelle</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="vision-grid">
+                <div class="vision-text" data-aos="fade-right" data-aos-delay="100">
+                    <p>
+                        Mon parcours m'a forgé une conviction profonde : les technologies les plus impactantes sont
+                        celles qui combinent
+                        <strong>rigueur architecturale</strong>, <strong>performance à l'échelle</strong> et
+                        <strong>sécurité robuste</strong>.
+                    </p>
+                    <p>
+                        Après avoir consolidé mes bases en développement d'applications métier complètes, je m'oriente
+                        délibérément vers trois
+                        domaines d'avenir qui me passionnent :
+                    </p>
+                    <ul class="vision-list">
+                        <li>
+                            <i class="fas fa-shield-halved"></i>
+                            <div>
+                                <strong>Cybersécurité</strong><br />
+                                Conception de systèmes résilients, audit de sécurité, protection des données et des
+                                infrastructures critiques.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <strong>Intelligence Artificielle & Machine Learning</strong><br />
+                                Exploitation des données pour créer des modèles prédictifs et des solutions
+                                intelligentes à forte valeur ajoutée.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <strong>Big Data & Systèmes distribués</strong><br />
+                                Architecture de pipelines de données, gestion de volumétries massives et optimisation
+                                des performances.
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-primary vision-cta">
+                        <i class="fas fa-handshake"></i> Discutons d'une opportunité
+                    </a>
+                </div>
+                <div class="vision-cards" data-aos="fade-left" data-aos-delay="200">
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="vision-card-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>Projets à fort impact</h4>
+                        <p>Architectures évolutives et haute disponibilité</p>
+                    </div>
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="vision-card-icon"><i class="fas fa-lock"></i></div>
+                        <h4>Sécurité & Compliance</h4>
+                        <p>Systèmes sécurisés by design</p>
+                    </div>
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="vision-card-icon"><i class="fas fa-microchip"></i></div>
+                        <h4>Innovation & R&D</h4>
+                        <p>Veille technologique et adoption des standards</p>
+                    </div>
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="vision-card-icon"><i class="fas fa-flag"></i></div>
+                        <h4>Intégration en France</h4>
+                        <p>Contribuer à l'écosystème tech français</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LOISIRS ===== -->
+    <section class="section" id="loisirs">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Personnalité</span>
+                <h2 class="section-title">Centres d'<span class="accent">Intérêt</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="hobby-icon"><i class="fas fa-chess"></i></div>
+                    <div class="hobby-name">Échecs</div>
+                    <div class="hobby-desc">Pensée stratégique, anticipation et résolution de problèmes complexes</div>
+                </div>
+                <div class="hobby-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="hobby-icon"><i class="fas fa-music"></i></div>
+                    <div class="hobby-name">Musique</div>
+                    <div class="hobby-desc">Créativité, sensibilité et expression artistique</div>
+                </div>
+                <div class="hobby-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="hobby-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="hobby-name">Jeux Vidéo</div>
+                    <div class="hobby-desc">Logique, coordination et compréhension des systèmes complexes</div>
+                </div>
+                <div class="hobby-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="hobby-icon"><i class="fas fa-plane"></i></div>
+                    <div class="hobby-name">Voyage</div>
+                    <div class="hobby-desc">Ouverture culturelle, adaptabilité et découverte du monde</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">Collaboration</span>
+                <h2 class="section-title">Entrons en <span class="accent">Contact</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Disponible pour vos projets</h3>
+                    <p>Je suis ouvert aux opportunités d'alternance, de stage ou aux projets freelance dans le
+                        développement logiciel, la cybersécurité et l'IA.</p>
+                    <div class="contact-items">
+                        <a href="tel:+33753254496" class="contact-item" id="callBtn">
+                            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <div class="contact-item-label">Téléphone</div>
+                                <div class="contact-item-value">+33 07 53 25 44 96</div>
+                            </div>
+                        </a>
+                        <a href="mailto:rayanebanguina09@gmail.com" class="contact-item" id="emailBtn">
+                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-item-label">Email</div>
+                                <div class="contact-item-value">rayanebanguina09@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/beni-banguina-68893425a" target="_blank"
+                            class="contact-item" id="linkedinBtn">
+                            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="contact-item-label">LinkedIn</div>
+                                <div class="contact-item-value">beni-banguina-68893425a</div>
+                            </div>
+                        </a>
+                        <div class="contact-item no-link">
+                            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div class="contact-item-label">Localisation</div>
+                                <div class="contact-item-value">Champigny-sur-Marne, 94500</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap" data-aos="fade-left" data-aos-delay="200">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nameInput">Nom complet</label>
+                            <input type="text" id="nameInput" name="name" placeholder="Votre nom" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input type="email" id="emailInput" name="email" placeholder="votre@email.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subjectInput">Sujet</label>
+                            <input type="text" id="subjectInput" name="subject" placeholder="Objet de votre message" />
+                        </div>
+                        <div class="form-group">
+                            <label for="messageInput">Message</label>
+                            <textarea id="messageInput" name="message" rows="5"
+                                placeholder="Décrivez votre projet ou opportunité..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                        <div class="form-success" id="formSuccess" style="display:none;">
+                            <i class="fas fa-circle-check"></i> Merci ! Votre message a été préparé. <a href="#"
+                                id="mailtoLink">Envoyer par email</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">RB<span class="accent">.</span></div>
+                <div class="footer-name">BANGUINA Di-Rema Rayan Beni</div>
+                <div class="footer-sub">Ingénieur des Travaux Informatiques – Génie Logiciel</div>
+                <div class="footer-location"><i class="fas fa-location-dot"></i> Basé en France · Île-de-France</div>
+                <div class="footer-available"><span class="available-dot"></span> Disponible pour opportunités &
+                    alternance</div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <div class="footer-col-title">Navigation</div>
+                    <a href="#about">Profil</a>
+                    <a href="#skills">Compétences</a>
+                    <a href="#experience">Expériences</a>
+                    <a href="#projects">Projets</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Plus</div>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#vision">Vision</a>
+                    <a href="#contact">Contact</a>
+                    <a href="cv.pdf" download>Télécharger CV</a>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Réseaux</div>
+                    <a href="mailto:rayanebanguina09@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="tel:+33753254496"><i class="fas fa-phone"></i> Téléphone</a>
+                    <a href="https://www.linkedin.com/in/beni-banguina-68893425a" target="_blank"><i
+                            class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2025 BANGUINA Di-Rema Rayan Beni · Tous droits réservés</div>
+            <div class="footer-copy">Conçu avec <i class="fas fa-heart accent"></i> · Portfolio Professionnel</div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
