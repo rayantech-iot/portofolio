@@ -111,8 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- TYPED TEXT ---- */
   const typedEl = document.getElementById('typedText');
   const words = [
-    'Ingénieur des Travaux Informatiques',
-    'Développeur Full Stack',
+    'Concepteur Développeur Full Stack',
+    'Master IA & Data Science',
     'Spécialiste en Génie Logiciel',
     'Passionné de Cybersécurité',
     'Explorateur de l\'IA & Big Data',
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const email = document.getElementById('emailInput').value;
     const subject = document.getElementById('subjectInput').value || 'Contact depuis Portfolio';
     const message = document.getElementById('messageInput').value;
-    const mailtoHref = `mailto:rayanebanguina09@gmail.com?subject=${encodeURIComponent(subject + ' - de ' + name)}&body=${encodeURIComponent('Nom: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
+    const mailtoHref = `mailto:banguinabeni09@gmail.com?subject=${encodeURIComponent(subject + ' - de ' + name)}&body=${encodeURIComponent('Nom: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
     if (mailtoLink) mailtoLink.href = mailtoHref;
     formSuccess.style.display = 'flex';
     formSuccess.style.alignItems = 'center';

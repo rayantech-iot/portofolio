@@ -1033,6 +1033,11 @@ textarea {
   color: #09754D;
 }
 
+.skill-icon.react {
+  background: rgba(97, 219, 251, 0.15);
+  color: #61DBFB;
+}
+
 .skill-icon.flutter {
   background: rgba(54, 175, 224, 0.15);
   color: #36AFE0;
@@ -1041,6 +1046,21 @@ textarea {
 .skill-icon.security {
   background: rgba(108, 99, 255, 0.15);
   color: var(--accent);
+}
+
+.skill-icon.tensorflow {
+  background: rgba(255, 171, 0, 0.15);
+  color: #FFAB00;
+}
+
+.skill-icon.data {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-blue);
+}
+
+.skill-icon.cnn {
+  background: rgba(139, 92, 246, 0.15);
+  color: #8B5CF6;
 }
 
 .skill-icon.sql {
