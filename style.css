@@ -1063,6 +1063,56 @@ textarea {
   color: #8B5CF6;
 }
 
+.skill-icon.audit {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10B981;
+}
+
+.skill-icon.sqlserver {
+  background: rgba(165, 29, 45, 0.15);
+  color: #A81D2D;
+}
+
+.skill-icon.oracle {
+  background: rgba(232, 63, 52, 0.15);
+  color: #E83F34;
+}
+
+.skill-icon.dbsecurity {
+  background: rgba(236, 72, 153, 0.15);
+  color: #EC4899;
+}
+
+.skill-icon.bigdata {
+  background: rgba(251, 146, 60, 0.15);
+  color: #FB923C;
+}
+
+.skill-icon.analyse {
+  background: rgba(52, 211, 153, 0.15);
+  color: #34D399;
+}
+
+.skill-icon.bi {
+  background: rgba(96, 165, 250, 0.15);
+  color: #60A5FA;
+}
+
+.skill-icon.opti {
+  background: rgba(248, 113, 113, 0.15);
+  color: #F87171;
+}
+
+.skill-icon.excel {
+  background: rgba(16, 124, 16, 0.15);
+  color: #217346;
+}
+
+.skill-icon.powerbi {
+  background: rgba(242, 200, 20, 0.15);
+  color: #F2C81E;
+}
+
 .skill-icon.sql {
   background: rgba(59, 130, 246, 0.15);
   color: var(--accent-blue);
